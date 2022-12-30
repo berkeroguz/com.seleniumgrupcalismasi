@@ -52,7 +52,7 @@ public class C02_SahibindenTest {
         String actualWord = driver.findElement(By.xpath("(//h3)[1]")).getText();
         driver.findElement(By.xpath("//div/p/a[@class='sahibinden-logo ng-isolate-scope']")).click();
         Assert.assertTrue("Anasayfa Vitrini yazısı içermiyor. ", actualWord.contains(expectedWord));
-
+        System.out.println("Deneme");
     }
 
     @AfterClass

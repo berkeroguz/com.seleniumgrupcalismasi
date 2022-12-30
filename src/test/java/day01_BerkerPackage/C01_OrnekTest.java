@@ -25,6 +25,7 @@ public class C01_OrnekTest {
     }
     @Test
     public void test01(){
+
         WebElement homePage = driver.findElement(By.xpath("//div[@class='carousel-inner']"));
         Assert.assertTrue("HomePage invisible", homePage.isDisplayed());
 
